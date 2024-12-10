@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+  content="ReCap: Better Gaussian Relighting with Cross-Environment Captures">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReCap: Better Gaussian Relighting with Cross-Environment Captures</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">ReCap: Better Gaussian Relighting with Cross-Environment Captures</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                Jingzhi Li, </span>
+              <span class="author-block">
+                Zongwei Wu, </span>
+              <span class="author-block">
+                Eduard Zamfir, </span>
+              <span class="author-block">
+                Radu Timofte</span>
+            </div>
+  
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"> Julius-Maximilians-Universität Würzburg</span>
+            </div>
+  
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <!--
+               <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2011.12948"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                -->
+               
+                <!-- Archive Link. -->
+                <span class="link-block">
+                  <a href=""
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+  
+                <!-- Video Link. -->
+                <!--
+                <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                -->
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href=""
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (coming soon)</span>
+                    </a>
+                </span>
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                  <a href=""
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="far fa-images"></i>
+                    </span>
+                    <span>Data (coming soon)</span>
+                    </a>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item">
+          <video poster=""  autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/toaster_snow_ReCap.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster=""  autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/toaster_fireplace_ReCap.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster=""  autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/toaster_forest_ReCap.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster=""  autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/toaster_night_ReCap.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/toaster_bridge_ReCap.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/toaster_interior_ReCap.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/toaster_sunset_ReCap.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-centered">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+        Accurate 3D objects relighting in diverse unseen environments is crucial for realistic virtual object placement. Due to the albedo-lighting ambiguity, existing methods often fall short in producing faithful relights. Without proper constraints, observed training views can be explained by numerous combinations of lighting and material attributes, lacking physical correspondence with the actual environment maps used for relighting. In this work, we present ReCap, treating cross-environment captures as multi-task target to provide the missing supervision that cuts through the entanglement. Specifically, ReCap jointly optimizes multiple lighting representations that share a common set of material attributes. This naturally harmonizes a coherent set of lighting representations around the mutual material attributes, exploiting commonalities and differences across varied object appearances. Such coherence enables physically sound lighting reconstruction and robust material estimation — both essential for accurate relighting.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Motivation</h2>
+      <p style="margin-bottom: 1.5em;">
+        Existing methods enabled relighting of Gaussians using explicit shading functions and learnable lighting representations, often in the form of environment maps. However, these methods often fail to produce faithful relights with only single-environment captures as inputs.
+      </p>
+      <p style="margin-bottom: 1.5em;">
+        Due to the albedo-lighting ambiguity, where changes in surface albedo are indistinguishable from changes in lighting intensity, the learned environments are often observed to be tinted with object colors, shifted in tone, scaled in intensity or filled with noise. 
+        Without proper constraints, these maps act as sinks for unmodeled residual terms during optimization, lacking physical correspondence with the actual environment maps used for relighting. 
+      </p>
+      <div class="columns is-centered">
+        <div class="column" style="margin-top: 3em;">
+          <div class="content">
+            <img src="./static/images/env_illus.png" style="width: 100%;">
+            <p class="caption" style="text-align: center;">
+              The same object position can display a range of pixel colors depending on viewing direction and lighting. Unlike existing methods, we explicitly model light dependent appearances with multiple learnable environment maps.
+            </p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <img src="./static/images/env_comp_vert.png" style="width: 100%;">
+            <p class="caption" style="text-align: center;">
+               Learned environment maps
+            </p>
+          </div>
+        </div>
+      </div>
+      <p style="margin-bottom: 1.5em;">
+        Inspired by photometric appearance modeling, we propose ReCap to leverage object captures across unknown lighting conditions, modeling light-dependent appearances with multiple environment maps that share a common Gaussian model. Conceptually, this resembles multi-task learning, where the learned environment maps act as task heads querying a shared material representation for varied object appearances.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Pipeline. -->
+      <div class="columns is-centered">
+        <div class="column">
+          <h2 class="title is-3" style="text-align: left;">Method Overview</h2>
+          <div class="content has-text-justified">
+            <img src="./static/images/pipeline.png" alt="Method pipeline" style="width: 100%;">
+            <p class="caption">
+              The proposed ReCap training framework. Compared to original 3DGS, each Gaussian is augmented with 3 extra material attributes. Given
+              k sets of object appearances from unknown lighting conditions as input, k learnable environment maps are instantiated. Gaussian color is pre-computed
+              according to the shading function in the world space based on environment queries and material properties. 2D images are rasterized with standard Gaussian
+              splatting and used for loss computation.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Pipeline. -->
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+  <div class="container is-max-desktop">
+    <!-- Title at full width -->
+    <h2 class="title is-3">Visual Comparison</h2>
+    <!-- Video content at 3/4 width -->
+    <div class="columns is-centered">
+      <div class="column is-three-quarters">
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                 autoplay
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="100%">
+            <source src="./static/videos/visual_comp.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section"> 
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">References</h2>
+        <div class="content has-text-justified">
+          <p>
+            <a href="https://arxiv.org/abs/2311.17977">GShader</a>: Yingwenqi Jiang, Jiadong Tu, Yuan Liu, Xifeng Gao, Xiaoxiao Long, Wenping Wang, and Yuexin Ma. Gaussianshader: 3d gaussian splatting with shading functions for reflective surfaces. In CVPR, 2024.
+          </p>
+
+          <p>
+            <a href="https://arxiv.org/abs/2311.16473">GS-IR</a>: Zhihao Liang, Qi Zhang, Ying Feng, Ying Shan, and Kui Jia. Gs-ir: 3d gaussian splatting for inverse rendering. In CVPR, 2024 
+          </p>
+          
+          <p>
+            <a href="https://arxiv.org/abs/2404.18454">3DGS-DR</a>:  Keyang Ye, Qiming Hou, and Kun Zhou. 3d gaussian splatting with deferred reflection. In ACM SIGGRAPH, 2024.
+          </p>
+
+          <p>
+            <a href="https://arxiv.org/abs/2311.16043">R3DG</a>:  Jian Gao, Chun Gu, Youtian Lin, Hao Zhu, Xun Cao, Li Zhang, and Yao Yao. Relightable 3d gaussians: Realistic point cloud relighting with brdf decomposition and ray tracing. In ECCV, 2024
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">BibTeX</h2>
+        <div class="content">
+          <pre><code>
+
+          </code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            We thank the authors of <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>  for kindly sharing the template for this webpage.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
