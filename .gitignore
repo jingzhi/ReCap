@@ -1,0 +1,36 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs and debugging files
+logs/
+*.log
+*.out
+*.err
+
+# macOS-specific files
+.DS_Store
+
+# Windows-specific files
+Thumbs.db
+
+# IDE / Editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+
+# Cython and compiled files
+*.so
+*.pyd
+*.dll
+
+# Conda / Pip dependencies
+*.lock
+pip-wheel-metadata/
+

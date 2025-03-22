@@ -1,0 +1,24 @@
+name: recap
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.7.13
+  - pip=22.3.1
+  - plyfile=0.8.1
+  - pytorch=1.12.1
+  - torchaudio=0.12.1
+  - torchvision=0.13.1
+  - tqdm
+  - pip:
+    - opencv-python
+    - yacs
+    - open3d
+    - imageio
+    - lpips
+    - submodules/diff-gaussian-rasterization
+    - submodules/simple-knn
+    - submodules/nvdiffrast
+
+
