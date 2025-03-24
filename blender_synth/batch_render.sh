@@ -11,6 +11,4 @@ PYTHONPATH=$(pwd) blender --background --python render_all.py -- --blender_file 
 PYTHONPATH=$(pwd) blender --background --python render_all.py -- --blender_file "./blender_files/coffee.blend" --output_dir "coffee_relight" --no_val 
 PYTHONPATH=$(pwd) blender --background --python render_all.py -- --blender_file "./blender_files/lego.blend" --output_dir "lego_relight" --no_val 
 PYTHONPATH=$(pwd) blender --background --python render_all.py -- --blender_file "./blender_files/drums.blend" --output_dir "drums_relight" --no_val 
-:w
-
 
