@@ -1,5 +1,5 @@
 # ReCap: Better Gaussian Relighting With Cross-Environment Captures (CVPR 2025)
-## [Project Page](https://jingzhi.github.io/ReCap/) |  [Paper] | [Dataset](https://drive.google.com/drive/folders/1TH9RXfjrpR7SCcODjzcH47sI5NHieqLR?usp=sharing)
+## [Project Page](https://jingzhi.github.io/ReCap/) |  [Paper](https://arxiv.org/abs/2412.07534) | [Dataset](https://drive.google.com/drive/folders/1TH9RXfjrpR7SCcODjzcH47sI5NHieqLR?usp=sharing)
 
 
 ## Installation
