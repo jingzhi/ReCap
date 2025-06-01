@@ -2,7 +2,7 @@
 ## [Project Page](https://jingzhi.github.io/ReCap/) |  [Paper](https://arxiv.org/abs/2412.07534) | [Dataset](https://drive.google.com/drive/folders/1TH9RXfjrpR7SCcODjzcH47sI5NHieqLR?usp=sharing)
 
 
-## Installation
+## Setup
 
 #### Tested on Ubuntu 22.04 + CUDA 11.8.
 To setup the environment:
@@ -62,3 +62,14 @@ The environment map strength is typically set to 1.0, except for the `teapot` an
 
 If you wish to render albedo, depth or normal for the provided images or simply render your own object, please refer to [Data Generation](./blender_synth).
 
+## Citation
+If you find this work helpful, please consider citing us:
+
+```latex
+@inproceedings{li2025recap,
+  title={ReCap: Better Gaussian Relighting with Cross-Environment Captures}, 
+  author={Jingzhi Li and Zongwei Wu and Eduard Zamfir and Radu Timofte},
+  booktitle={CVPR},
+  year={2025},
+}
+```
