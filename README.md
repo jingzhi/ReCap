@@ -5,9 +5,12 @@
 ## Setup
 
 #### Tested on Ubuntu 22.04 + CUDA 11.8.
-To clone the repo:
+To clone the repo and nvdiffrast:
 ```bash
-git clone --recursive https://github.com/jingzhi/ReCap.git
+git clone https://github.com/jingzhi/ReCap.git
+cd submodules
+git clone https://github.com/NVlabs/nvdiffrast.git && cd nvdiffrast && git checkout tags/v0.3.1
+cd ../..
 ```
 
 To setup the environment:
@@ -66,6 +69,11 @@ The environment map strength is typically set to 1.0, except for the `teapot` an
 ### Render extra data
 
 If you wish to render albedo, depth or normal for the provided images or simply render your own object, please refer to [Data Generation](./blender_synth).
+
+## Acknowledgement
+We have borrow codes from the following repositories. Many thanks to the authors for sharing their codes.
+- [gaussian splatting](https://github.com/graphdeco-inria/gaussian-splatting)
+- [GaussianShader](https://github.com/Asparagus15/GaussianShader)
 
 ## Citation
 If you find this work helpful, please consider citing us:
