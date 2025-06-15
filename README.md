@@ -5,6 +5,11 @@
 ## Setup
 
 #### Tested on Ubuntu 22.04 + CUDA 11.8.
+To clone the repo:
+```bash
+git clone --recursive https://github.com/jingzhi/ReCap.git
+```
+
 To setup the environment:
 ```bash
 conda env create --file environment.yml
